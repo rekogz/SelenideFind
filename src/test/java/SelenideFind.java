@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SelenideFind {
 
     @Test
-    void CookiesReject () {
+    void CookiesReject() {
         open("https://www.kaspersky.com/resource-center/definitions/cookies");
         $(withText("We use cookies")).shouldBe(visible);
         $(byTagAndText("button", "Accept and Close")).click();
@@ -19,7 +19,7 @@ public class SelenideFind {
     }
 
     @Test
-    void SelenideFindTop () {
+    void SelenideFindTop() {
         Configuration.holdBrowserOpen = true;
 //        Configuration.pageLoadStrategy = "eager";
         open("https://github.com");
